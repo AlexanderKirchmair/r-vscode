@@ -1,0 +1,26 @@
+---
+title: "Rmd example"
+---
+
+```{r}
+# devtools::install_github("ManuelHentschel/vscDebugger") # if not yet installed
+```
+
+
+```{r}
+library("languageserver")
+library("devtools")
+library("vscDebugger")
+```
+
+
+```{r}
+R.home()
+system("source ~/.bashrc; which R", intern = TRUE)
+.libPaths()
+```
+
+
+```{r}
+sessionInfo()
+```
