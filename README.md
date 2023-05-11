@@ -6,17 +6,17 @@ Use R and Rmarkdown in VS Code
 ### Setup
 
 
-**VS Code Extensions:**
-[REditorSupport](https://github.com/REditorSupport/vscode-R/wiki)
-R Debugger
-Path Intellisense
+**VS Code Extensions:**  
+[REditorSupport](https://github.com/REditorSupport/vscode-R/wiki)  
+R Debugger  
+Path Intellisense  
 
-**VS Code settings:**
-Preferences > Settings > Text Editor > Files: Add Item '*.Rmd' and Value 'rmd'
-Preferences > Settings > Extensions > R > Plot: Set 'Use Httpgd' option to true
+**VS Code settings:**  
+Preferences > Settings > Text Editor > Files: Add Item '*.Rmd' and Value 'rmd'  
+Preferences > Settings > Extensions > R > Plot: Set 'Use Httpgd' option to true  
 
 
-**R packages/settings:**
+**R packages/settings:**  
 ```r
 install.packages("languageserver")
 devtools::install_github("ManuelHentschel/vscDebugger")
@@ -25,9 +25,9 @@ options(vsc.use_httpgd = TRUE)
 ```
 
 
-### Using conda
+### Using conda  
 
-**Conda environment:**
+**Conda environment:**  
 ```bash
 envname="r-env"
 installconda="r r-essentials r-languageserver r-devtools r-httpgd"
@@ -45,15 +45,15 @@ conda deactivate
 ```
 
 
-### Usage
+### Usage  
 
-**R session:**
-(Activate conda env)
-Open a new R terminal (if you want to use conda, simply type 'R' into the bash terminal)
+**R session:**  
+(Activate conda env)  
+Open a new R terminal (if you want to use conda, simply type 'R' into the bash terminal)  
 
 **R markdown:**  
 Open 'example.Rmd'  
 Running a code chunk sends the code to the active R terminal  
 
-**Tips:**
+**Tips:**  
 Code chunks are executed in the directory that is set in the terminal, not in the directory of the '.Rmd' file.
