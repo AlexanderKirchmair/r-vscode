@@ -10,7 +10,8 @@ title: "Rmd example"
 ```{r}
 library("languageserver")
 library("devtools")
-library("vscDebugger")
+# library("vscDebugger")
+# library("httpgd")
 ```
 
 
@@ -18,6 +19,11 @@ library("vscDebugger")
 R.home()
 system("source ~/.bashrc; which R", intern = TRUE)
 .libPaths()
+```
+
+
+```{r}
+boxplot(mpg ~ carb, mtcars)
 ```
 
 
