@@ -1,5 +1,5 @@
 # r-vscode
-Use R and Rmarkdown in VS Code
+Use R and Rmarkdown in VS Code with conda
 
 Basic usage:
 ```bash
@@ -11,12 +11,10 @@ R
 
 Using R in VS Code requires some extensions, configuration changes and installation of R packages.
 
-**VS Code Extensions:**  
+**VS Code extensions:**  
 [REditorSupport](https://github.com/REditorSupport/vscode-R/wiki)  
-
-Optional:  
-[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)  
-[R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger)  
+[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) (optional)  
+[R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger) (optional)  
 
 **VS Code settings:**  
 Preferences > Settings > Text Editor > Files: Add Item '*.Rmd' and Value 'rmd'  
@@ -24,7 +22,7 @@ Preferences > Settings > Extensions > R > Plot: Set 'Use Httpgd' option to true
 
 
 **R packages:**  
-The [languageserver](https://github.com/REditorSupport/languageserver) package is required to make R language features available and the [httpgd](https://nx10.github.io/httpgd/index.html) package is used for viewing plots.
+The [languageserver](https://github.com/REditorSupport/languageserver) package is required to make R language features available and the [httpgd](https://nx10.github.io/httpgd/index.html) package is used for viewing plots. Either install them in your default R libraries or with conda (later).
 ```r
 install.packages("languageserver")
 install.packages("httpgd")
