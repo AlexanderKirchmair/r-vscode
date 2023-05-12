@@ -23,14 +23,6 @@ Plotting:
 boxplot(mpg ~ carb, mtcars)
 ```
 
-
-Debugging:
-```{r}
-sapply(1:10, function(x){ if (x == 5){ stop("Error.") }})
-
-```
-
-
 ```{r}
 sessionInfo()
 ```
