@@ -6,9 +6,8 @@ title: "Rmd example"
 In contrast to Rstudio, the setup chunk is not run automatically:
 ```{r setup}
 library("languageserver")
-library("devtools")
-library("vscDebugger")
 library("httpgd")
+library("devtools")
 ```
 
 
@@ -25,6 +24,15 @@ boxplot(mpg ~ carb, mtcars)
 ```
 
 
+Debugging:
+```{r}
+sapply(1:10, function(x){ if (x == 5){ stop("Error.") }})
+
+```
+
+
 ```{r}
 sessionInfo()
 ```
+
+
